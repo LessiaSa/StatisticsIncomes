@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StatisticsService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">StatisticsIncomes</a> &gt; <a href="index.source.html" class="el_package">ru.netology.statistic</a> &gt; <span class="el_source">StatisticsService.java</span></div><h1>StatisticsService.java</h1><pre class="source lang-java linenums">package ru.netology.statistic;
+
+<span class="fc" id="L3">public class StatisticsService {</span>
+    public long findMax(long[] incomes) {
+<span class="fc" id="L5">        long currentMax = incomes[0];</span>
+<span class="fc bfc" id="L6" title="All 2 branches covered.">        for (long income :incomes) {</span>
+<span class="pc bpc" id="L7" title="1 of 2 branches missed.">            if (currentMax &lt; income) {</span>
+<span class="nc" id="L8">                currentMax = income;</span>
+            }
+        }
+<span class="fc" id="L11">        return currentMax;</span>
+    }
+    public long findMin(long[] incomes) {
+<span class="fc" id="L14">        long currentMin = incomes[0];</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        for (long income : incomes) {</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">            if (currentMin &gt; income) {</span>
+<span class="fc" id="L17">                currentMin = income;</span>
+            }
+        }
+<span class="fc" id="L20">        return currentMin;</span>
+    }
+    public long findSame(long[] incomes) {
+<span class="fc" id="L23">        long currentSame = incomes[0];</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">        for (long income : incomes) {</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">            if (currentSame == income) {</span>
+<span class="fc" id="L26">                currentSame = income;</span>
+            }
+        }
+<span class="fc" id="L29">        return currentSame;</span>
+    }
+    public long findMedian(long[] incomes) {
+<span class="fc" id="L32">        long currentMedian = incomes[0];</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">        for (long income : incomes) {</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">            if (currentMedian != income) {</span>
+<span class="fc" id="L35">               currentMedian = income;</span>
+            }
+        }
+<span class="fc" id="L38">        return currentMedian;</span>
+    }
+    public long findSum(long[] incomes) {
+<span class="fc" id="L41">        long currentSum = incomes[0];</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        for (long income : incomes) {</span>
+<span class="fc" id="L43">            currentSum += income;</span>
+        }
+<span class="fc" id="L45">        return currentSum;</span>
+    }
+    public long LessThanZero(long[] incomes) {
+<span class="nc" id="L48">        long currentLessThanZero = incomes[0];</span>
+<span class="nc bnc" id="L49" title="All 2 branches missed.">        for (long income : incomes) {</span>
+<span class="nc bnc" id="L50" title="All 2 branches missed.">            if (currentLessThanZero &lt; 0) {</span>
+<span class="nc" id="L51">                currentLessThanZero = income;</span>
+            }
+        }
+<span class="nc" id="L54">        return currentLessThanZero;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
