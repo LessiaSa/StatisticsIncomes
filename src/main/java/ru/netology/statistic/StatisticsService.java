@@ -3,13 +3,14 @@ package ru.netology.statistic;
 public class StatisticsService {
     public long findMax(long[] incomes) {
         long currentMax = incomes[0];
-        for (long income :incomes) {
+        for (long income : incomes) {
             if (currentMax < income) {
                 currentMax = income;
             }
         }
         return currentMax;
     }
+
     public long findMin(long[] incomes) {
         long currentMin = incomes[0];
         for (long income : incomes) {
@@ -19,6 +20,7 @@ public class StatisticsService {
         }
         return currentMin;
     }
+
     public long findSame(long[] incomes) {
         long currentSame = incomes[0];
         for (long income : incomes) {
@@ -28,15 +30,17 @@ public class StatisticsService {
         }
         return currentSame;
     }
+
     public long findMedian(long[] incomes) {
         long currentMedian = incomes[0];
         for (long income : incomes) {
             if (currentMedian != income) {
-               currentMedian = income;
+                currentMedian = income;
             }
         }
         return currentMedian;
     }
+
     public long findSum(long[] incomes) {
         long currentSum = incomes[0];
         for (long income : incomes) {
@@ -45,4 +49,15 @@ public class StatisticsService {
         return currentSum;
 
     }
+
+    public long findMedianSum(long[] incomes) {
+        long currentSum = incomes[0];
+        return currentSum / incomes.length;
+    }
 }
+
+
+
+
+
+

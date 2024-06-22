@@ -3,55 +3,72 @@
 <span class="fc" id="L3">public class StatisticsService {</span>
     public long findMax(long[] incomes) {
 <span class="fc" id="L5">        long currentMax = incomes[0];</span>
-<span class="fc bfc" id="L6" title="All 2 branches covered.">        for (long income :incomes) {</span>
-<span class="pc bpc" id="L7" title="1 of 2 branches missed.">            if (currentMax &lt; income) {</span>
-<span class="nc" id="L8">                currentMax = income;</span>
+<span class="fc bfc" id="L6" title="All 2 branches covered.">        for (long income : incomes) {</span>
+<span class="fc bfc" id="L7" title="All 2 branches covered.">            if (currentMax &lt; income) {</span>
+<span class="fc" id="L8">                currentMax = income;</span>
             }
         }
 <span class="fc" id="L11">        return currentMax;</span>
     }
+
     public long findMin(long[] incomes) {
-<span class="fc" id="L14">        long currentMin = incomes[0];</span>
-<span class="fc bfc" id="L15" title="All 2 branches covered.">        for (long income : incomes) {</span>
-<span class="fc bfc" id="L16" title="All 2 branches covered.">            if (currentMin &gt; income) {</span>
-<span class="fc" id="L17">                currentMin = income;</span>
+<span class="fc" id="L15">        long currentMin = incomes[0];</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        for (long income : incomes) {</span>
+<span class="fc bfc" id="L17" title="All 2 branches covered.">            if (currentMin &gt; income) {</span>
+<span class="fc" id="L18">                currentMin = income;</span>
             }
         }
-<span class="fc" id="L20">        return currentMin;</span>
+<span class="fc" id="L21">        return currentMin;</span>
     }
+
     public long findSame(long[] incomes) {
-<span class="fc" id="L23">        long currentSame = incomes[0];</span>
-<span class="fc bfc" id="L24" title="All 2 branches covered.">        for (long income : incomes) {</span>
-<span class="fc bfc" id="L25" title="All 2 branches covered.">            if (currentSame == income) {</span>
-<span class="fc" id="L26">                currentSame = income;</span>
+<span class="fc" id="L25">        long currentSame = incomes[0];</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        for (long income : incomes) {</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">            if (currentSame == income) {</span>
+<span class="fc" id="L28">                currentSame = income;</span>
             }
         }
-<span class="fc" id="L29">        return currentSame;</span>
+<span class="fc" id="L31">        return currentSame;</span>
     }
+
     public long findMedian(long[] incomes) {
-<span class="fc" id="L32">        long currentMedian = incomes[0];</span>
-<span class="fc bfc" id="L33" title="All 2 branches covered.">        for (long income : incomes) {</span>
-<span class="fc bfc" id="L34" title="All 2 branches covered.">            if (currentMedian != income) {</span>
-<span class="fc" id="L35">               currentMedian = income;</span>
+<span class="fc" id="L35">        long currentMedian = incomes[0];</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        for (long income : incomes) {</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">            if (currentMedian != income) {</span>
+<span class="fc" id="L38">                currentMedian = income;</span>
             }
         }
-<span class="fc" id="L38">        return currentMedian;</span>
+<span class="fc" id="L41">        return currentMedian;</span>
     }
+
     public long findSum(long[] incomes) {
-<span class="fc" id="L41">        long currentSum = incomes[0];</span>
-<span class="fc bfc" id="L42" title="All 2 branches covered.">        for (long income : incomes) {</span>
-<span class="fc" id="L43">            currentSum += income;</span>
+<span class="fc" id="L45">        long currentSum = incomes[0];</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        for (long income : incomes) {</span>
+<span class="fc" id="L47">            currentSum += income;</span>
         }
-<span class="fc" id="L45">        return currentSum;</span>
+<span class="fc" id="L49">        return currentSum;</span>
+
     }
-    public long LessThanZero(long[] incomes) {
-<span class="nc" id="L48">        long currentLessThanZero = incomes[0];</span>
-<span class="nc bnc" id="L49" title="All 2 branches missed.">        for (long income : incomes) {</span>
-<span class="nc bnc" id="L50" title="All 2 branches missed.">            if (currentLessThanZero &lt; 0) {</span>
-<span class="nc" id="L51">                currentLessThanZero = income;</span>
+
+    public long findMedianSum(long[] incomes) {
+<span class="fc" id="L54">        long currentSum = incomes[0];</span>
+<span class="fc" id="L55">        return currentSum / incomes.length;</span>
+    }
+
+    public long findNewMax(long[]incomes) {
+<span class="fc" id="L59">        long currentNewMax = incomes[0];</span>
+<span class="fc bfc" id="L60" title="All 2 branches covered.">        for (long income : incomes) {</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">            if (currentNewMax &lt; income) {</span>
+<span class="fc" id="L62">                currentNewMax = income;</span>
             }
         }
-<span class="nc" id="L54">        return currentLessThanZero;</span>
+<span class="fc" id="L65">        return currentNewMax;</span>
     }
 }
+
+
+
+
+
+
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
