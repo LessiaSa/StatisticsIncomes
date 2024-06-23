@@ -6,6 +6,8 @@
 *_.iml
 *.idea/
 idea/
+target/
+
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
